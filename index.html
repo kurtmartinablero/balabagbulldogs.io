@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balabag Volleyball Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Balabag Volleyball Club</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#members">Members</a>
+            <a href="#events">Events</a>
+            <a href="#live-games" class="nav-live">
+                <span class="pulse-dot"></span> WATCH LIVE
+            </a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home" style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('images/bulldogs.jpg') center/cover; 
+           height: 100vh; 
+           display: flex; 
+           flex-direction: column; 
+           justify-content: flex-end; /* Pushes content to the bottom */
+           text-align: center; 
+           color: white; 
+           font-family: 'Inter', sans-serif; 
+           padding: 60px 20px;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h1
+                style="font-size: clamp(2.5rem, 8vw, 4.5rem); margin-bottom: 10px; line-height: 1.1; font-weight: 800; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">
+                BALABAG BULLDOGS
+            </h1>
+
+            <a href="#register"
+                style="display: inline-block; padding: 12px 30px; font-size: 0.9rem; border: 2px solid #fff; border-radius: 50px; background: rgba(255, 255, 255, 0.1); color: #fff; text-decoration: none; text-transform: uppercase; font-weight: bold; backdrop-filter: blur(5px); transition: 0.3s;">
+                Join The Club
+            </a>
+        </div>
+    </section>
+    <!-- MEMBERS SECTION -->
+
+    <section id="members">
+        <h3>Team Members</h3>
+
+        <div class="shorts-container">
+            <div class="short-card"
+                style="background-image: url('images/ablero.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="short-overlay">
+                    <div class="short-info">
+                        <img src="images/ablero.jpg"
+                            alt="Mark Aller, a Libero player for the Balabag Bulldogs volleyball team, in team uniform"
+                            class="avatar">
+                        <span class="member-name">Kur Martin Ablero</span>
+                    </div>
+                    <h4 class="member-title">Position: Libero</h4>
+                </div>
+            </div>
+            <div class="short-card"
+                style="background-image: url('images/bok.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="short-overlay">
+                    <div class="short-info">
+                        <img src="images/bok.jpg"
+                            alt="John Paul, an Outside Hitter player for the Balabag Bulldogs volleyball team, in team uniform"
+                            class="avatar">
+                        <span class="member-name">Elijah Del Castillo</span>
+                    </div>
+                    <h4 class="member-title">Position: OH</h4>
+                </div>
+            </div>
+            <div class="short-card"
+                style="background-image: url('images/loyd.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="short-overlay">
+                    <div class="short-info">
+                        <img src="images/loyd.jpg"
+                            alt="Loyd Jamerlarin, a Middle Blocker player for the Balabag Bulldogs volleyball team, in team uniform"
+                            class="avatar">
+                        <span class="member-name">Loyd</span>
+                    </div>
+                    <h4 class="member-title">Position: MD</h4>
+                </div>
+            </div>
+            <div class="short-card"
+                style="background-image: url('images/jp.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="short-overlay">
+                    <div class="short-info">
+                        <img src="images/jp.jpg"
+                            alt="John Paul Dalisay, a Setter player for the Balabag Bulldogs volleyball team, in team uniform"
+                            class="avatar">
+                        <span class="member-name">John Paul Dalisay</span>
+                    </div>
+                    <h4 class="member-title">Position: Setter</h4>
+                </div>
+            </div>
+            <div class="short-card"
+                style="background-image: url('images/melvin.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="short-overlay">
+                    <div class="short-info">
+                        <img src="images/melvin.jpg"
+                            alt="Melvin Muyco, a Outside Hitter player for the Balabag Bulldogs volleyball team, in team uniform"
+                            class="avatar">
+                        <span class="member-name">Melvin Muyco</span>
+                    </div>
+                    <h4 class="member-title">Position: OH</h4>
+                </div>
+            </div>
+            <div class="short-card"
+                style="background-image: url('images/mark.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="short-overlay">
+                    <div class="short-info">
+                        <img src="images/mark.jpg"
+                            alt="Mark Aller, a Libero player for the Balabag Bulldogs volleyball team, in team uniform"
+                            class="avatar">
+                        <span class="member-name">Mark Aller</span>
+                    </div>
+                    <h4 class="member-title">Position: Libero</h4>
+                </div>
+            </div>
+    </section>
+    <!-- COACHES SECTION -->
+    <h3
+        style="font-family: 'Inter', sans-serif; font-size: 2rem; margin-bottom: 30px; color: #899ade; text-align: center; border-bottom: 1px solid #c7d2ff; padding: 20px 0;">
+        Our Coaches</h3>
+
+    <div
+        style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto;">
+
+        <div
+            style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); padding-bottom: 20px; transition: 0.3s;">
+            <div style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                <img src="images/ken.jpg" alt="Coach Alex" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+
+            <div style="padding: 15px;">
+                <p
+                    style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.65rem; color: #888; margin: 5px 0;">
+                    Head Coach</p>
+                <h4 style="font-size: 1.4rem; margin: 5px 0; color: #1a1a1a; font-family: 'Inter', sans-serif;">
+                    Coach Keneth</h4>
+
+                <p
+                    style="font-size: 0.85rem; font-style: italic; color: #555; margin: 10px 0 15px 0; line-height: 1.3;">
+                    "Ready to change your game?"
+                </p>
+
+            </div>
+        </div>
+
+        <div
+            style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); padding-bottom: 20px;">
+            <div style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                <img src="images/bry2.jpg" alt="Coach Maria" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+
+            <div style="padding: 15px;">
+                <p
+                    style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.65rem; color: #888; margin: 5px 0;">
+                    Head Coach</p>
+                <h4 style="font-size: 1.4rem; margin: 5px 0; color: #1a1a1a; font-family: 'Inter', sans-serif;">
+                    Coach Ervin</h4>
+
+                <p
+                    style="font-size: 0.85rem; font-style: italic; color: #555; margin: 10px 0 15px 0; line-height: 1.3;">
+                    "Master the fundamentals."
+                </p>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <!-- EVENTS SECTION -->
+    <!-- <section id="events">
+        <h3>Upcoming Events</h3>
+        <div class="grid">
+            <div class="card">
+                <img src="images/bg1.jpg" alt="Event">
+                <h4>September 7 2025</h4>
+                <p>Friendly Match – Balabag Court</p>
+                <p>This Tryouts is open to all Balabag youth players 16 years old up to 21 years old.</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <img src="images/bg2.jpg" alt="Event">
+                    <h4>January 5</h4>
+                    <p>CHAMPIONSHIP GAME – 2025</p>
+                    <p>The Bulldogs First Podium game.</p>
+                </div>
+    </section>-->
+    <section id="events">
+        <h3>Upcoming Events</h3>
+        <div class="grid" id="event-grid"></div>
+    </section>
+    <!-- LIVE GAMES -->
+    <section id="live-games" style="background: #0a2cff; color: #fff;">
+        <h3>Watch Live</h3>
+        <div class="grid">
+            <div class="card" style="color: #0a2cff;">
+                <img src="images/bg2.jpg"
+                    alt="A vibrant scene from a championship game featuring players in action on the court, showcasing teamwork and determination, with a cheering crowd in the background."
+                    style="width: 100%; height: auto; max-width: 220px;" />
+                <h4 id="live-stream-title">Loading...</h4>
+                <p id="live-status">Waiting for stream...</p>
+                <a href="#" id="live-stream-link" class="btn" target="_blank">Open Stream</a>
+            </div>
+        </div>
+    </section>
+    <!-- Training & GAME SCHEDULE -->
+    <!-- <section id="schedule">
+        <h3>Training & Game Schedule</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>Training</h4>
+                <p>Thursday - Fri<br>6:00 PM – 8:00 PM</p>
+            </div>
+            <div class="card">
+                <h4>Games Scrimmage Matches</h4>
+                <p>Saturday and Sunday<br>6:00 PM – 9:00 PM</p>
+                <p> </p>
+            </div>
+        </div>
+    </section> -->
+    <section id="schedule">
+        <h3>Training & Game Schedule</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>Training</h4>
+                <p>
+                    <span id="train-days"></span><br>
+                    <span id="train-time"></span>
+                </p>
+            </div>
+            <div class="card">
+                <h4>Games Scrimmage Matches</h4>
+                <p>
+                    <span id="scrim-days"></span><br>
+                    <span id="scrim-time"></span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- PLAYERS REGISTRATION FORM -->
+    <section id="register">
+        <h3>Player Registration</h3>
+        <div class="card">
+            <form>
+                <input type="text" placeholder="Full Name" style="width:100%;padding:12px;margin-bottom:10px;" />
+                <input type="email" placeholder="Email" style="width:100%;padding:12px;margin-bottom:10px;" />
+                <input type="text" placeholder="Position" style="width:100%;padding:12px;margin-bottom:10px;" />
+
+                <a href="https://www.facebook.com/profile.php?id=61587213507379" style="text-decoration: none;">
+                    <button class="btn" type="button"
+                        style="width:100%; background-color:#ff5722; color:white; padding:12px; border:none; border-radius:5px; cursor:pointer;">
+                        Submit & Message Us
+                    </button>
+                </a>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div>
+            <h4>For inquiries contact us</h4>
+            <p>Email: balabagvolleyball@gmail.com</p>
+            <p>Phone: +63 9632959635</p>
+        </div>
+        <div>
+            <h4>Follow Us</h4>
+            <p><a href="#">Facebook : BVC</a></p>
+            <p><a href="#">Instagram : @BVC</a></p>
+        </div>
+    </footer>
+    <script>
+        fetch('schedule.json')
+            .then(response => response.json())
+            .then(data => {
+                // Updates the Training/Scrimmage text
+                document.getElementById('train-days').innerText = data.training.days;
+                document.getElementById('train-time').innerText = data.training.time;
+                document.getElementById('scrim-days').innerText = data.scrimmage.days;
+                document.getElementById('scrim-time').innerText = data.scrimmage.time;
+
+                // Builds the Event cards automatically
+                const eventGrid = document.getElementById('event-grid');
+                eventGrid.innerHTML = '';
+
+                data.events.forEach(event => {
+                    const eventCard = `
+                    <div class="card">
+                        <img src="${event.image}" alt="Event">
+                        <h4>${event.date}</h4>
+                        <p><strong>${event.title}</strong></p>
+                        <p>${event.desc}</p>
+                    </div>
+                `;
+                    eventGrid.innerHTML += eventCard;
+                });
+            })
+            .catch(err => console.error('Error loading data:', err));
+
+        fetch('live.json')
+            .then(response => response.json())
+            .then(liveData => {
+                const titleEl = document.getElementById('live-stream-title');
+                const linkEl = document.getElementById('live-stream-link');
+                const statusEl = document.getElementById('live-status');
+
+                titleEl.innerText = liveData.streamTitle;
+                linkEl.href = liveData.streamUrl;
+
+                if (liveData.isLive) {
+                    statusEl.innerHTML = '<span style="color:red; font-weight:bold;">● LIVE NOW</span>';
+                } else {
+                    statusEl.innerText = "Next game coming soon!";
+                    linkEl.style.opacity = "0.6"; // Dims the button when not live
+                }
+            });
+    </script>
+
+</body>
+
+</html>

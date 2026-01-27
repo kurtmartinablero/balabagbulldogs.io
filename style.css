@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f3f6ff;
+    color: #0a2cff;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #e9efff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #0a2cff;
+}
+
+/* HERO */
+.hero {
+    padding: 80px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background: #e9efff;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero p {
+    max-width: 420px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #0a2cff;
+    color: #fff;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 60px;
+}
+
+section h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* GRID & CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* EVENTS */
+.event {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c7d2ff;
+    padding: 20px 0;
+}
+
+.event:last-child {
+    border-bottom: none;
+}
+
+/* FOOTER */
+footer {
+    background: #0a2cff;
+    color: #fff;
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Container allows horizontal scrolling like YouTube Shorts */
+.shorts-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 20px;
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+}
+
+.shorts-container::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome/Safari */
+}
+
+.short-card {
+    min-width: 200px; /* Adjust width as needed */
+    height: 350px;    /* Tall portrait height */
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.short-card:hover {
+    transform: scale(1.02);
+}
+
+/* The dark gradient at the bottom for text readability */
+.short-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.short-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.member-name {
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.member-title {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 600;
+    /* Forces "..." if text is too long */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* LIVE BUTTON IN HEADER */
+.nav-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff; /* White background to stand out against light blue header */
+    padding: 6px 15px;
+    border-radius: 999px; /* Matches your .btn style */
+    border: 1px solid #ff4444; /* Red border for urgency */
+    color: #ff4444 !important; /* Forces red text */
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.nav-live:hover {
+    background: #fff5f5;
+    transform: translateY(-2px);
+    transition: 0.2s;
+}
+
+/* PULSE ANIMATION */
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background: #ff4444;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+.pulse-dot::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #ff4444;
+    border-radius: 50%;
+    z-index: -1;
+    animation: live-pulse 2s infinite;
+}
+
+@keyframes live-pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(2.5); opacity: 0; }
+}

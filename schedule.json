@@ -1,0 +1,24 @@
+{
+    "training": {
+        "days": "Thursday - Friday",
+        "time": "6:00 PM – 8:00 PM"
+    },
+    "scrimmage": {
+        "days": "Saturday and Sunday",
+        "time": "6:00 PM – 9:00 PM"
+    },
+    "events": [
+        {
+            "date": "September 7, 2025",
+            "title": "Friendly Match – Balabag Court",
+            "desc": "Open to all Balabag youth players 16 to 21 years old.",
+            "image": "images/bg1.jpg"
+        },
+        {
+            "date": "January 5, 2026",
+            "title": "CHAMPIONSHIP GAME",
+            "desc": "The Bulldogs First Podium game.",
+            "image": "images/bg2.jpg"
+        }
+    ]
+}
