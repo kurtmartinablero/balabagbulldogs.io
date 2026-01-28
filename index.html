@@ -35,10 +35,12 @@
     color: white; 
     padding: 40px 20px;">
         <div style="max-width: 800px; margin: 0 auto;">
-            <h1 style="font-size: clamp(2.5rem, 8vw, 4.5rem); margin-bottom: 10px; line-height: 1.1; font-weight: 800; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">
+            <h1
+                style="font-size: clamp(2.5rem, 8vw, 4.5rem); margin-bottom: 10px; line-height: 1.1; font-weight: 800; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">
                 BALABAG BULLDOGS
             </h1>
-            <a href="#register" style="display: inline-block; padding: 12px 30px; font-size: 0.9rem; border: 2px solid #fff; border-radius: 50px; background: rgba(255, 255, 255, 0.1); color: #fff; text-decoration: none; text-transform: uppercase; font-weight: bold; backdrop-filter: blur(5px); transition: 0.3s;">
+            <a href="#register"
+                style="display: inline-block; padding: 12px 30px; font-size: 0.9rem; border: 2px solid #fff; border-radius: 50px; background: rgba(255, 255, 255, 0.1); color: #fff; text-decoration: none; text-transform: uppercase; font-weight: bold; backdrop-filter: blur(5px); transition: 0.3s;">
                 Join The Club
             </a>
         </div>
@@ -49,33 +51,47 @@
         <div class="shorts-container" id="team-grid"></div>
     </section>
 
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 2rem; margin-bottom: 30px; color: #899ade; text-align: center; border-bottom: 1px solid #c7d2ff; padding: 20px 0;">
-        Our Coaches</h3>
+    <section id="coaches-section" style="background: #f3f6ff;">
+        <h3
+            style="text-align: center; color: #899ade; border-bottom: 1px solid #c7d2ff; padding-bottom: 20px; margin-bottom: 40px;">
+            Our Coaches
+        </h3>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto;">
-
-        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); padding-bottom: 20px; transition: 0.3s;">
-            <div style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
-                <img src="images/ken.jpg" alt="Coach Keneth" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="grid" style="max-width: 1000px; margin: 0 auto;">
+            <div class="card">
+                <div style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 12px;">
+                    <img src="images/ken.jpg" alt="Coach Keneth" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding-top: 15px;">
+                    <p
+                        style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.65rem; color: #888; margin:0;">
+                        Head Coach</p>
+                    <h4 style="font-size: 1.4rem; color: #1a1a1a; margin: 5px 0;">Coach Keneth</h4>
+                    <p style="font-size: 0.85rem; font-style: italic; color: #555; margin:0;">"Ready to change your
+                        game?"</p>
+                </div>
             </div>
-            <div style="padding: 15px;">
-                <p style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.65rem; color: #888; margin: 5px 0;">Head Coach</p>
-                <h4 style="font-size: 1.4rem; margin: 5px 0; color: #1a1a1a; font-family: 'Inter', sans-serif;">Coach Keneth</h4>
-                <p style="font-size: 0.85rem; font-style: italic; color: #555; margin: 10px 0 15px 0; line-height: 1.3;">"Ready to change your game?"</p>
+
+            <div class="card">
+                <div style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 12px;">
+                    <img src="images/bry2.jpg" alt="Coach Ervin" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding-top: 15px;">
+                    <p
+                        style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.65rem; color: #888; margin:0;">
+                        Head Coach</p>
+                    <h4 style="font-size: 1.4rem; color: #1a1a1a; margin: 5px 0;">Coach Ervin</h4>
+                    <p style="font-size: 0.85rem; font-style: italic; color: #555; margin:0;">"Master the fundamentals."
+                    </p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); padding-bottom: 20px;">
-            <div style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
-                <img src="images/bry2.jpg" alt="Coach Ervin" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div style="padding: 15px;">
-                <p style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.65rem; color: #888; margin: 5px 0;">Head Coach</p>
-                <h4 style="font-size: 1.4rem; margin: 5px 0; color: #1a1a1a; font-family: 'Inter', sans-serif;">Coach Ervin</h4>
-                <p style="font-size: 0.85rem; font-style: italic; color: #555; margin: 10px 0 15px 0; line-height: 1.3;">"Master the fundamentals."</p>
-            </div>
-        </div>
-    </div>
+    <section id="events">
+        <h3>Upcoming Events</h3>
+        <div class="grid" id="event-grid"></div>
+    </section>
 
     <section id="events">
         <h3>Upcoming Events</h3>
@@ -116,7 +132,8 @@
                 <input type="email" placeholder="Email" style="width:100%;padding:12px;margin-bottom:10px;" />
                 <input type="text" placeholder="Position" style="width:100%;padding:12px;margin-bottom:10px;" />
                 <a href="https://www.facebook.com/profile.php?id=61587213507379" style="text-decoration: none;">
-                    <button class="btn" type="button" style="width:100%; background-color:#ff5722; color:white; padding:12px; border:none; border-radius:5px; cursor:pointer;">
+                    <button class="btn" type="button"
+                        style="width:100%; background-color:#ff5722; color:white; padding:12px; border:none; border-radius:5px; cursor:pointer;">
                         Submit & Message Us
                     </button>
                 </a>
@@ -148,7 +165,7 @@
                 document.getElementById('scrim-time').innerText = data.scrimmage.time;
 
                 const eventGrid = document.getElementById('event-grid');
-                if(eventGrid && data.events) {
+                if (eventGrid && data.events) {
                     eventGrid.innerHTML = '';
                     data.events.forEach(event => {
                         const eventCard = `
@@ -182,21 +199,21 @@
 
         // Members Logic
         // Hard-coded Members Logic (Replacement)
-const players = [
-    { name: "Ablero Kurt Martin", position: "Libero", image: "images/ablero.jpg" },
-    { name: "Elijah Del Castilo", position: "OH", image: "images/bok.jpg" },
-    { name: "Loyd Jamelarin ", position: "MB", image: "images/loyd.jpg" },
-    { name: "Melvin Muyco", position: "OH", image: "images/melvin.jpg" },
-    { name: "Mark Aller", position: "Libero", image: "images/mark.jpg" },
-    { name: "John Paul Dalisay", position: " Setter", image: "images/jp.jpg" }
+        const players = [
+            { name: "Ablero Kurt Martin", position: "Libero", image: "images/ablero.jpg" },
+            { name: "Elijah Del Castilo", position: "OH", image: "images/bok.jpg" },
+            { name: "Loyd Jamelarin ", position: "MB", image: "images/loyd.jpg" },
+            { name: "Melvin Muyco", position: "OH", image: "images/melvin.jpg" },
+            { name: "Mark Aller", position: "Libero", image: "images/mark.jpg" },
+            { name: "John Paul Dalisay", position: " Setter", image: "images/jp.jpg" }
 
-];
+        ];
 
-const teamGrid = document.getElementById('team-grid');
-teamGrid.innerHTML = ''; 
+        const teamGrid = document.getElementById('team-grid');
+        teamGrid.innerHTML = '';
 
-players.forEach(player => {
-    const playerCard = `
+        players.forEach(player => {
+            const playerCard = `
         <div class="short-card" style="background-image: url('${player.image}');">
             <div class="short-overlay">
                 <div class="short-info">
@@ -206,8 +223,9 @@ players.forEach(player => {
                 <h4 class="member-title">Position: ${player.position}</h4>
             </div>
         </div>`;
-    teamGrid.innerHTML += playerCard;
-});
+            teamGrid.innerHTML += playerCard;
+        });
     </script>
 </body>
+
 </html>

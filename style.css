@@ -310,3 +310,40 @@ footer a {
         padding: 4px 10px;
     }
 }
+
+/* --- ALL MOBILE FIXES (Place at the end of style.css) --- */
+@media (max-width: 600px) {
+    /* Header adjustments */
+    header {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    nav {
+        font-size: 0.75rem;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-live {
+        padding: 4px 10px;
+    }
+
+    /* Grid adjustments - Makes Coaches and Events stack 1-by-1 */
+    .grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+    
+    /* Coaches section spacing */
+    #coaches-section {
+        padding: 40px 15px;
+    }
+
+    /* Hero text sizing for mobile */
+    .hero h2 {
+        font-size: 32px;
+    }
+}
