@@ -1,0 +1,48 @@
+backend:
+  name: github
+  repo: kurtmartinablero/balabagbulldogs.io # Example: erwin/balabag-vbc
+  branch: main
+
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  - name: "schedule"
+    label: "Training & Events"
+    files:
+      - name: "data"
+        label: "Website Data"
+        file: "schedule.json"
+        fields:
+          - {label: "Training Days", name: "training.days", widget: "string"}
+          - {label: "Training Time", name: "training.time", widget: "string"}
+          - {label: "Scrimmage Days", name: "scrimmage.days", widget: "string"}
+          - {label: "Scrimmage Time", name: "scrimmage.time", widget: "string"}
+          - label: "Upcoming Events"
+            name: "events"
+            widget: "list"
+            fields:
+              - {label: "Event Title", name: "title", widget: "string"}
+              - {label: "Date", name: "date", widget: "string"}
+              - {label: "Description", name: "desc", widget: "text"}
+              - {label: "Event Image", name: "image", widget: "image"}
+
+              - name: "live"
+        label: "Live Stream Link"
+        file: "live.json"
+        fields:
+          - {label: "Is the Game Live?", name: "isLive", widget: "boolean", default: false}
+          - {label: "Stream Title", name: "streamTitle", widget: "string", default: "Bulldogs vs. Opponent"}
+          - {label: "Facebook/YouTube Link", name: "streamUrl", widget: "string"}
+
+          - name: "team"
+    label: "Team Members"
+    file: "members.json"
+    fields:
+      - label: "Players"
+        name: "players"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Position", name: "position", widget: "string"}
+          - {label: "Photo", name: "image", widget: "image"}
