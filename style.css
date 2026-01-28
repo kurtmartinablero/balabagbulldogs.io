@@ -347,3 +347,26 @@ footer a {
         font-size: 32px;
     }
 }
+
+/* Copyright Styling */
+.copyright {
+    grid-column: 1 / -1; /* This makes it stretch across both columns on desktop */
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Thin line above the name */
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    opacity: 0.8; /* Makes it look slightly more subtle */
+}
+
+@media (max-width: 600px) {
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .copyright {
+        grid-column: 1; /* Reset to 1 column for mobile */
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
