@@ -127,37 +127,52 @@
     <section id="register">
         <h3>Player Registration</h3>
         <div class="card">
-            <form>
-                <input type="text" placeholder="Full Name" style="width:100%;padding:12px;margin-bottom:10px;" />
-                <input type="email" placeholder="Email" style="width:100%;padding:12px;margin-bottom:10px;" />
-                <input type="text" placeholder="Position" style="width:100%;padding:12px;margin-bottom:10px;" />
-                <a href="https://www.facebook.com/profile.php?id=61587213507379" style="text-decoration: none;">
-                    <button class="btn" type="button"
-                        style="width:100%; background-color:#ff5722; color:white; padding:12px; border:none; border-radius:5px; cursor:pointer;">
-                        Submit & Message Us
-                    </button>
-                </a>
+            <form action="https://formspree.io/f/your_unique_id" method="POST">
+
+                <input type="text" name="Full Name" placeholder="Full Name"
+                    style="width:100%;padding:12px;margin-bottom:10px;" required />
+                <input type="email" name="Email" placeholder="Email" style="width:100%;padding:12px;margin-bottom:10px;"
+                    required />
+                <input type="text" name="Position" placeholder="Position"
+                    style="width:100%;padding:12px;margin-bottom:10px;" required />
+
+                <button class="btn" type="submit"
+                    style="width:100%; border:none; cursor:pointer; background-color:#0a2cff; color:white;">
+                    Submit Registration
+                </button>
+
             </form>
+        </div>
+    </section>
+    <section id="register">
+        <h3>Alternative Registration</h3>
+        <div class="card">
+            <a href="https://www.facebook.com/profile.php?id=61587213507379" style="text-decoration: none;">
+                <button class="btn" type="button"
+                    style="width:100%; background-color:#ff5722; color:white; padding:12px; border:none; border-radius:5px; cursor:pointer;">
+                    Message Us on Facebook to Register
+                </button>
+            </a>
         </div>
     </section>
 
     <footer id="contact">
-    <div>
-        <h4>For inquiries contact us</h4>
-        <p>Email: balabagvolleyball@gmail.com</p>
-        <p>Phone: +63 9632959635</p>
-    </div>
-    
-    <div>
-        <h4>Follow Us</h4>
-        <p><a href="https://www.facebook.com/profile.php?id=61587213507379">Facebook : BVC</a></p>
-        <p><a href="#">Instagram : @BVC</a></p>
-    </div>
+        <div>
+            <h4>For inquiries contact us</h4>
+            <p>Email: balabagvolleyball@gmail.com</p>
+            <p>Phone: +63 9632959635</p>
+        </div>
 
-    <div class="copyright">
-        <p>&copy; 2026 Kurt Martin Ablero. All Rights Reserved.</p>
-    </div>
-</footer>
+        <div>
+            <h4>Follow Us</h4>
+            <p><a href="https://www.facebook.com/profile.php?id=61587213507379">Facebook : BVC</a></p>
+            <p><a href="#">Instagram : @BVC</a></p>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Kurt Martin Ablero. All Rights Reserved.</p>
+        </div>
+    </footer>
     <script>
         // Schedule and Events Logic
         fetch('schedule.json')
