@@ -1,5 +1,6 @@
 {
-  "isLive": false,
   "streamTitle": "Bulldogs vs. Smashers",
-  "streamUrl": "https://www.facebook.com/your-page-link"
+  "streamUrl": "https://facebook.com/your-live-link",
+  "isLive": false,
+  "image": "images/bg2.JPG"
 }

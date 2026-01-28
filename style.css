@@ -11,25 +11,50 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
+/* HEADER - Responsive Version */
 header {
     background: #e9efff;
-    padding: 20px 60px;
+    padding: 15px 5%; /* Use percentage for flexible spacing */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky; /* Keeps it at the top while scrolling */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 header h1 {
-    font-size: 20px;
+    font-size: 1.1rem; /* Smaller font on mobile */
     font-weight: 700;
+    color: #0a2cff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Consistent spacing between links */
 }
 
 nav a {
-    margin-left: 25px;
+    margin-left: 0; /* Remove the old margin-left */
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     color: #0a2cff;
+    font-size: 0.8rem; /* Smaller links for mobile */
+}
+
+/* Hide specific links on very small screens if it gets too crowded */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Stack logo above nav */
+        padding: 10px;
+    }
+    nav {
+        gap: 10px;
+        flex-wrap: wrap; /* Allows links to wrap to a second line if needed */
+        justify-content: center;
+    }
 }
 
 /* HERO */
@@ -63,14 +88,25 @@ nav a {
     font-weight: 600;
 }
 
-/* SECTIONS */
+/* Update global section padding */
 section {
-    padding: 80px 60px;
+    padding: 60px 20px; /* Reduced side padding for all screens */
 }
 
-section h3 {
-    font-size: 36px;
-    margin-bottom: 20px;
+/* RESPONSIVE FIXES */
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    section {
+        padding: 40px 15px; /* Even tighter padding for mobile */
+    }
+
+    section h3 {
+        font-size: 28px; /* Smaller headings */
+    }
 }
 
 /* GRID & CARDS */
@@ -255,4 +291,22 @@ footer a {
 @keyframes live-pulse {
     0% { transform: scale(1); opacity: 0.8; }
     100% { transform: scale(2.5); opacity: 0; }
+}
+
+/* Mobile Header Fix */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+    nav {
+        font-size: 0.75rem;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-live {
+        padding: 4px 10px;
+    }
 }
